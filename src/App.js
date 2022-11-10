@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, {useEffect, useState} from 'react'
+import './App.css'
+import NavBar from './Component/NavBar'
+import Home from './Component/Home'
+import Main from './Component/Main'
+import Footer from './Component/Footer'
+import RingLoader from "react-spinners/RingLoader"
+const App = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     {loading ?
+  <div className="preloaderr">
+   <RingLoader color="#36d7b7"  loading={loading} height={100}  size={138}speedMultiplier={1} />
+  </div> :
+  <>
+   <NavBar/>
+      <Home/>
+      <Main/>
+      <Footer/>
+  </>
+}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+

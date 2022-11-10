@@ -1,0 +1,159 @@
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --WhitrColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --WhiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --cardHover: rgb(255, 255, 255);
+  }
+  .main{
+   
+
+  }
+
+  .secTitle .title{
+     position: relative;
+     width: max-content;
+     color: var(--textColor);
+     margin: 1rem 0;
+     z-index: 2;
+
+  }
+  .srcContent{
+   display: flex;
+   justify-content: space-between;
+   column-gap: 15px;
+   row-gap: 15px;
+    gap: 15px 15px;
+    
+  }
+.singleDestinaltion{
+    height: 100%;
+    display: grid;
+   
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px 4px rgb(140, 140, 141, 0.549);
+    overflow: hidden;
+    width: 350px;
+   
+ } 
+ .singleDestinaltion:hover{
+  
+   box-shadow: 0 2px 4px rgb(85, 85, 114, 0.549);
+   transition: .3s ease;
+    background:var(--gradientColor) ;
+    color: white;
+ }
+ .grade small{
+  text-align: center;
+  background: var(--gradientColor);
+  color: white;
+  border-radius: 1rem;
+  padding: 1px 10px;
+  font-size: 15px;
+  margin-left: 7px;
+ }
+ .price{
+  font-size: 2rem;
+  color: #000;
+
+ }
+ .desc{
+  font-size: 13.5px;
+  color: var(--textColor);
+  font-weight: 500;
+  
+ }
+ .btn{
+  margin-top: 1rem;
+  color: var(--WhitrColor);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: .5rem;
+  border-radius: 30px;
+  width: 130px;
+  height: 50px;
+ }
+.btn .ico{
+  align-self: center;
+  font-size: 18px;
+  color: white;
+}
+ .imageDiv{
+    height: 200px;
+    width: 400px;
+     overflow: hidden;
+    
+     position: relative;
+     right: 15px;
+     bottom: 10px;
+ }
+ .cardInfo{
+ width: 350px;
+ padding: 10px;
+ }
+ .destTitel{
+  color: var(--blackColor);
+  font-size: 1.25rem;
+ }
+ .continent{
+  gap: .5rem;
+ }
+ .singleDestinaltion .icon{
+  color: var(--textColor);
+  font-size: 18px;
+
+ }
+ .name{
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 14px;
+
+ }
+ .fees{
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1px solid var(--greyText);
+  border-bottom: 1px solid var(--greyText);
+ }
+ .fees .grade{
+  color: var(--textColor);
+  max-width: 100px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ }
+ .imageDiv video{
+    
+    height: 240px;
+    width: 410px;
+   
+    object-fit: cover;
+    transition:  2s ease;
+ }
+ .imageDiv video:hover{
+  transform: scale(1.1);
+ } 
+  .secTitle .title::after{
+    position: absolute;
+    content: '';
+    background: var(--SecondaryColor);
+    height: 5px;
+    width: 120px;
+    right: 0;
+    bottom: 5px;
+    z-index: -1;
+  }

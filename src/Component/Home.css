@@ -1,0 +1,171 @@
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --WhitrColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --WhiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+  }
+.textDiv{
+    font-size: 13px;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 550px;
+   
+}
+.textDiv h1, span{
+    font-weight: 900;
+}
+.homeTitel{
+    position: relative;
+    font-size: 1.8rem;
+    
+}
+.overlay{ 
+   height: 100%;
+   width: 100%;
+   top: 0;
+   position: relative;
+    bottom: 400px;
+   z-index: 1;
+   mix-blend-mode: hard-light;
+}
+video{
+   
+   z-index: 1000;
+    height: 600px;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+.homeContent{
+    width: 100%;
+    height: max-content;
+    padding: 8rem 9.5rem 23rem;
+    display: flex;
+    row-gap: 3rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin: auto;
+    color: var(--WhitrColor);
+    
+    
+    height: 700px;
+    
+}
+
+  .home{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
+   
+   
+    background:  hsla(197, 98%, 23%, 0.562);
+  }
+
+  .cardDiv{
+    position: relative;
+    padding: 2rem 1rem;
+    background: var(--WhitrColor);
+    border-radius: 10px;
+    gap: 1rem;
+  }
+  label{
+    display: block;
+    color: var(--textColor);
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .labal_total{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .total{
+    color: var(--textColor);
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .input{
+    height: 40px;
+    padding: 0 1rem;
+    background: var(--inputColor);
+    border-radius: 3rem;
+
+  }
+
+  input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+
+  }
+  input::placeholder{
+    font-size: 13px;
+
+  }
+
+  .icon{
+    font-size: 18px;
+    color: var(--PrimaryColor)!important;
+    margin-left: 10px;
+
+  }
+  .input[type=range]{
+    background: blue;
+  }
+  .searchOptions{
+    position: absolute;
+    
+    background: var(--gradientColor);
+    width: max-content;
+    bottom: 15px;
+    column-gap: .8rem;
+    padding: 5px 1rem;
+    border-radius: 3rem;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: center;
+    cursor: pointer;
+  }
+  .searchOptions:hover{
+    background: var(--PrimaryColor);
+  }
+  .searchOptions .icon{
+    font-size: 18px;
+  }
+  .searchOptions span{
+    font-size: 13px;
+
+  }
+  .homeFooterIcon{
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+  .homeFooterIcon .ico{
+    font-size: 30px;
+    margin:0 5px;
+    color: white;
+    font-weight: 600;
+     position: relative;
+     top: 20px;
+  }
+  .homeFooterIcon .ico:hover{
+    color: var(--PrimaryColor);
+  }
